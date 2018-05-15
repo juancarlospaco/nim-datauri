@@ -6,7 +6,7 @@
 # Install
 
 ```
-nimble install datauri
+nimble install https://github.com/juancarlospaco/nim-datauri
 ```
 
 
