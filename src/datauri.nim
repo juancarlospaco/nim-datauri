@@ -1,11 +1,11 @@
 #!/usr/bin/nim c -r
 
 
-import strformat, strutils, mimetypes, base64
+import strformat, strutils, mimetypes, base64, algorithm
 
 
 proc file2datauri*(filename: string): string =
-  fmt"data:{newMimetypes().getMimetype(filename.split('.')[1])};base64,{encode(readFile(filename))}"
+  fmt"data:{newMimetypes().getMimetype(filename.split('.').reversed()[0])};base64,{encode(readFile(filename))}"
 
 
 proc datauri2file*(data_uri: string, filename: string): cint =
