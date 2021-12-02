@@ -1,5 +1,6 @@
 # nim-datauri
 
+- **DEPRECATED, USE https://nim-lang.github.io/Nim/uri.html#basic-usage-data-uri-base64 instead!.**
 - Data URI Base64 UTF-8 Nim module.
 
 
